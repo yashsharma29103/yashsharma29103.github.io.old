@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website design</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="/images/logo.png" alt="LOGO"></a>
+            <div class="navlinks" id="nav-links">
+                <div class="toggle" onclick="hidemenu()">X</div>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="toggle" onclick="showmenu()">O</div>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+    <!-- contact -->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3488.6544937240724!2d77.05991911472998!3d29.02721697285939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390db10377463789%3A0xf697cc2d804b8b8e!2sDeenbandhu%20Chhotu%20Ram%20University%20Of%20Science%20And%20Technology!5e0!3m2!1sen!2sin!4v1633803210855!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>DCRUST, murthal</h5>
+                        <p>Sonipat, Haryana</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91 1xxxxxxxx1</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>yashsharma29103@gmail.com</h5>
+                        <p>Email us your query.</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form_handler.php" method="POST">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter your email address" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea rows="8" name="message" placeholder="message"></textarea>
+                    <button type="submit" class="btn1 red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Id tempor reprehenderit Lorem sit id quis eiusmod reprehenderit ex nulla incididunt.
+            <br>Cupidatat ea Lorem cillum qui consequat enim laborum deserunt eiusmod anim magna magna culpa eiusmod.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+
+    </section>
+    <!-- toggle button for menu -->
+    <script>
+        var navlinks = document.getElementById("nav-links");
+        function showmenu() {
+            navlinks.style.display = "block";
+        }
+        function hidemenu() {
+            navlinks.style.display = "none";
+        }
+    </script>
+</body>
+</html>

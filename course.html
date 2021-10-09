@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website design</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="/images/logo.png" alt="LOGO"></a>
+            <div class="navlinks" id="nav-links">
+                <div class="toggle" onclick="hidemenu()">X</div>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="toggle" onclick="showmenu()">O</div>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+    <!-- courses -->
+    <section class="course">
+        <h1>Courses we offered</h1>
+        <p>Reprehenderit adipisicing sunt mollit ex labore ex aliqua consequat proident est enim aliquip officia sit.</p>
+
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Eiusmod officia pariatur incididunt est quis. In culpa ut sit labore deserunt. Eiusmod proident laboris reprehenderit nisi dolor cillum dolor ullamco ut excepteur Lorem qui nostrud id. Sit cillum anim mollit officia voluptate sunt dolore. Nisi aute nostrud laboris sunt aliqua enim consectetur et ea reprehenderit minim nisi ea fugiat. Irure velit et ea nulla pariatur veniam amet in proident.</p>
+            </div>
+            <div class="course-col">
+                <h3>Graduation</h3>
+                <p>Eiusmod officia pariatur incididunt est quis. In culpa ut sit labore deserunt. Eiusmod proident laboris reprehenderit nisi dolor cillum dolor ullamco ut excepteur Lorem qui nostrud id. Sit cillum anim mollit officia voluptate sunt dolore. Nisi aute nostrud laboris sunt aliqua enim consectetur et ea reprehenderit minim nisi ea fugiat. Irure velit et ea nulla pariatur veniam amet in proident.</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Eiusmod officia pariatur incididunt est quis. In culpa ut sit labore deserunt. Eiusmod proident laboris reprehenderit nisi dolor cillum dolor ullamco ut excepteur Lorem qui nostrud id. Sit cillum anim mollit officia voluptate sunt dolore. Nisi aute nostrud laboris sunt aliqua enim consectetur et ea reprehenderit minim nisi ea fugiat. Irure velit et ea nulla pariatur veniam amet in proident.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="fac">
+        <h1>Our Facalities</h1>
+        <p>Ipsum adipisicing cillum cillum dolore minim sint nostrud nulla est consectetur pariatur aliquip ex quis.</p>
+
+        <div class="row">
+            <div class="fac-col">
+                <img src="/images/library.png">
+                <h3>World Class Library</h3>
+                <p>Anim ut sit est sunt ipsum fugiat deserunt occaecat nostrud. Consequat sint do qui pariatur sunt nostrud sit incididunt adipisicing nostrud quis aute. Ullamco qui proident cillum non nostrud. Sit laboris culpa ea aliquip proident quis ex. Id id Lorem in ut exercitation ut eiusmod et laborum ea reprehenderit adipisicing sint magna. Sunt nisi in ipsum amet exercitation non cillum non ullamco est occaecat.</p>
+            </div>
+            <div class="fac-col">
+                <img src="/images/basketball.png">
+                <h3>Largest Playground</h3>
+                <p>Anim ut sit est sunt ipsum fugiat deserunt occaecat nostrud. Consequat sint do qui pariatur sunt nostrud sit incididunt adipisicing nostrud quis aute. Ullamco qui proident cillum non nostrud. Sit laboris culpa ea aliquip proident quis ex. Id id Lorem in ut exercitation ut eiusmod et laborum ea reprehenderit adipisicing sint magna. Sunt nisi in ipsum amet exercitation non cillum non ullamco est occaecat.</p>
+            </div>
+            <div class="fac-col">
+                <img src="/images/cafeteria.png">
+                <h3>Tasty and healthy food</h3>
+                <p>Anim ut sit est sunt ipsum fugiat deserunt occaecat nostrud. Consequat sint do qui pariatur sunt nostrud sit incididunt adipisicing nostrud quis aute. Ullamco qui proident cillum non nostrud. Sit laboris culpa ea aliquip proident quis ex. Id id Lorem in ut exercitation ut eiusmod et laborum ea reprehenderit adipisicing sint magna. Sunt nisi in ipsum amet exercitation non cillum non ullamco est occaecat.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Id tempor reprehenderit Lorem sit id quis eiusmod reprehenderit ex nulla incididunt.
+            <br>Cupidatat ea Lorem cillum qui consequat enim laborum deserunt eiusmod anim magna magna culpa eiusmod.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+
+    </section>
+    <!-- toggle button for menu -->
+    <script>
+        var navlinks = document.getElementById("nav-links");
+        function showmenu() {
+            navlinks.style.display = "block";
+        }
+        function hidemenu() {
+            navlinks.style.display = "none";
+        }
+    </script>
+</body>
+</html>

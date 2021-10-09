@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website design</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="/images/logo.png" alt="LOGO"></a>
+            <div class="navlinks" id="nav-links">
+                <div class="toggle" onclick="hidemenu()">X</div>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="toggle" onclick="showmenu()">O</div>
+        </nav>
+        <h1>Our Certificate & Online Program for 2021</h1>
+    </section>
+    <!-- blog -->
+    <section class="blog">
+        <div class="row">
+            <div class="blog-left">
+                <img src="/images/certificate.jpg">
+                <h2>Our Certificate & Online Program for 2021</h2>
+                <p>Lorem anim et duis consequat do est dolor consequat eiusmod aliquip ex. Ut nulla est occaecat velit fugiat. Ea sunt sunt aliquip laboris deserunt. Nulla minim commodo fugiat ut exercitation magna id et Lorem.</p>
+                <p>Anim duis Lorem non cillum sit dolor excepteur reprehenderit est adipisicing sunt. Sint culpa laboris cillum magna. Commodo velit sint exercitation exercitation ad ea est. Sint sunt nostrud proident magna enim mollit ut voluptate nostrud esse. </p>
+                <p>Pariatur deserunt cupidatat exercitation duis ut elit labore. Consectetur enim excepteur irure deserunt voluptate. Aute ullamco mollit consectetur id cupidatat proident labore reprehenderit eu et irure anim. Sit cillum sint ut est aliqua non velit eiusmod. Sit labore duis adipisicing velit sit laborum dolor incididunt anim. Incididunt quis Lorem consequat ad cillum exercitation sunt officia Lorem mollit dolor amet officia qui. Aliqua duis exercitation ut irure laborum voluptate id enim non labore mollit qui. </p>
+                <p>In occaecat incididunt Lorem magna adipisicing eiusmod officia irure id velit fugiat magna nisi. Tempor incididunt commodo voluptate anim duis proident et excepteur esse ut qui dolore voluptate. Laborum velit exercitation reprehenderit velit officia occaecat reprehenderit esse aliquip irure ullamco.</p>
+                <p>Labore ex et nulla laborum. Cupidatat eiusmod occaecat enim esse pariatur ut irure. Non officia pariatur do ut ea ipsum exercitation minim eu dolor fugiat proident consequat quis. Sit cupidatat excepteur Lorem in officia laborum culpa consequat mollit ex ullamco veniam incididunt officia. Culpa Lorem commodo do mollit Lorem ea aliqua veniam cupidatat.</p>
+                <div class="comment">
+                    <h3>Leave a Comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter E-mail">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="btn1 red-btn">Post Comment</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>23</span>
+                </div>
+                <div>
+                    <span>Web design</span>
+                    <span>24</span>
+                </div>
+                <div>
+                    <span>Business Analysis</span>
+                    <span>26</span>
+                </div>
+                <div>
+                    <span>Business Intelligence</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>30</span>
+                </div>
+                <div>
+                    <span>Data Analytics</span>
+                    <span>32</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Id tempor reprehenderit Lorem sit id quis eiusmod reprehenderit ex nulla incididunt.
+            <br>Cupidatat ea Lorem cillum qui consequat enim laborum deserunt eiusmod anim magna magna culpa eiusmod.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+
+    </section>
+    <!-- toggle button for menu -->
+    <script>
+        var navlinks = document.getElementById("nav-links");
+        function showmenu() {
+            navlinks.style.display = "block";
+        }
+        function hidemenu() {
+            navlinks.style.display = "none";
+        }
+    </script>
+</body>
+</html>
